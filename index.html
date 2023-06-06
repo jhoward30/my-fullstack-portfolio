@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John Howard - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          John Howard
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jhow@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://sfceddiepierce.files.wordpress.com/2020/02/ms8.jpg?w=1024" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm John Howard! <img src="https://cdn.nba.com/teams/uploads/sites/1610612754/2021/10/logo-pacers.svg" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 10 years of experience in both application and presentation layers.
+            I am currently learning applications and microservices that can be deployed on IBM Cloud at the Market Square arena in Indiana. <br>
+            I am an new user of IBM Watson Services and have worked on Watson Studio for data analytics.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>10 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://dev.java/assets/images/java-logo-vert-blk.png"/>
+            <h6>Java</h6>
+            <p>4 years experience</p>
+          </div> 
+         
+          <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/120px-React-icon.svg.png"/>
+            <h6>React</h6>
+            <p>3 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png"/>
+            <h6>Node.js</h6>
+            <p>6 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png"/>
+            <h6>CSS</h6>
+            <p>5 years experience</p>
+         </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects-card" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>API</h3>
+            <ul>
+              <li>Developed an API that allowed me to become proficient in Javascript and understand client-side architecture.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Face Recognition Software</h3>
+            <ul>
+              <li>Developed a facial recognition app that utlizes APIs to communicate with other apps that are stored on your mobile device</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Coding Tutorial Website</h3>
+            <ul>
+              <li>Created and styled multi-page website for users in need of a cheat-sheet for code within HTML.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John is a fast learner who always utlizes his free-time to pick up on extra items that will enhance his learningg.
+          He is determined and relentless when it comes to performing and finishing all required work.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with John has been a life-changing experience. 
+          His work ethic alone pushes me to work harder when I do not feel like it.
+          He is an inspiration and a role model to those around him and without a doubt is the most determined person I know.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with John when he first got into Full Stack Development. Over the last 20 years I have watched him grow and develop his skills into the most commited developer that I know. Being a mentor for 35 years,
+          I can gladly say that John has been the best student I have had in my years of mentoring. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
